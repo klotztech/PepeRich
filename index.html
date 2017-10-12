@@ -1,186 +1,217 @@
-<style>
-html {
-    overflow: hidden;
-}
+<html>
+<head>
+    <title>Pepe Rich</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hallo German! -->
+    <style>
+    html {
+        overflow: hidden;
+    }
 
-* {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: default;
-}
+    * {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+    }
 
-@-webkit-keyframes grow {
-    0% {
+    @-webkit-keyframes wob {
+        0% {
+            -webkit-transform: scale(1.1, 1.1);
+        }
+        80% {
+            -webkit-transform: scale(1, 1);
+        }
+        100% {
+            -webkit-transform: scale(1.1, 1.1);
+        }
+    }
+
+    @-webkit-keyframes grow {
+        0% {
+            -webkit-transform: scale(1.1, 1.1);
+        }
+        .5% {
+            -webkit-transform: scale(.9, .9);
+        }
+        2% {
+            -webkit-transform: scale(.9, .9);
+        }
+        100% {
+            -webkit-transform: scale(2, 2);
+        }
+    }
+
+    @-webkit-keyframes shrink {
+        100% {
+            -webkit-transform: scale(1.1, 1.1);
+        }
+    }
+
+    #pepe {
+        width: 200px;
+        height: 200px;
+        -webkit-transition: -webkit-transform .05s ease-in-out;
+        cursor: pointer;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -100px;
+        margin-top: -100px;
+        z-index: 1337696942;
+        -webkit-animation: wob 1s infinite reverse;
+    }
+
+    #pepe:hover {
         -webkit-transform: scale(1.1, 1.1);
     }
-    .5% {
+
+    #pepe:active {
         -webkit-transform: scale(.9, .9);
     }
-    2% {
-        -webkit-transform: scale(.9, .9);
+
+    #kek1, #kek2, #kek1b, #kek2b {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 0;
+        height: 0;
+        overflow: visible;
     }
-    100% {
-        -webkit-transform: scale(2, 2);
+
+    #kek1 {
+        -webkit-animation: pepepe 60s infinite linear;
     }
-}
 
-@-webkit-keyframes shrink {
-    100% {
-        -webkit-transform: scale(1.1, 1.1);
+    #kek2 {
+        -webkit-animation: pepepe 40s infinite linear reverse;
     }
-}
 
-#pepe {
-    width: 200px;
-    height: 200px;
-    -webkit-transition: -webkit-transform .05s ease-in-out;
-    cursor: pointer;
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -100px;
-    margin-top: -100px;
-}
-
-#pepe:hover {
-    -webkit-transform: scale(1.1, 1.1);
-}
-
-#pepe:active {
-    -webkit-transform: scale(.9, .9);
-}
-
-#kek1, #kek2 {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 0;
-    height: 0;
-    overflow: visible;
-}
-
-#kek1 {
-    -webkit-animation: pepepe 60s infinite linear;
-}
-
-#kek2 {
-    -webkit-animation: pepepe 40s infinite linear reverse;
-}
-
-@-webkit-keyframes pew0 {
-    0% {
-        -webkit-transform: translate(70px, 0px) rotate(0deg)
+    #kek1b {
+        -webkit-animation: pepepe 120s infinite linear;
     }
-    100% {
-        -webkit-transform: translate(300px, 0px) rotate(-720deg)
+
+    #kek2b {
+        -webkit-animation: pepepe 100s infinite linear reverse;
     }
-}
 
-@-webkit-keyframes pew1 {
-    0% {
-        -webkit-transform: translate(70px, 0px) rotate(0deg)
+    @-webkit-keyframes pew0 {
+        0% {
+            -webkit-transform: translate(70px, 0px) rotate(0deg)
+        }
+        100% {
+            -webkit-transform: translate(300px, 0px) rotate(-720deg)
+        }
     }
-    100% {
-        -webkit-transform: translate(300px, 0px) rotate(720deg)
+
+    @-webkit-keyframes pew1 {
+        0% {
+            -webkit-transform: translate(70px, 0px) rotate(0deg)
+        }
+        100% {
+            -webkit-transform: translate(300px, 0px) rotate(720deg)
+        }
     }
-}
 
-@-webkit-keyframes pew2 {
-    0% {
-        -webkit-transform: translate(70px, 0px) rotate(90deg)
+    @-webkit-keyframes pew2 {
+        0% {
+            -webkit-transform: translate(70px, 0px) rotate(90deg)
+        }
+        100% {
+            -webkit-transform: translate(300px, 0px) rotate(810deg)
+        }
     }
-    100% {
-        -webkit-transform: translate(300px, 0px) rotate(810deg)
+
+    @-webkit-keyframes pew3 {
+        0% {
+            -webkit-transform: translate(70px, 0px) rotate(-90deg)
+        }
+        100% {
+            -webkit-transform: translate(300px, 0px) rotate(-810deg)
+        }
     }
-}
 
-@-webkit-keyframes pew3 {
-    0% {
-        -webkit-transform: translate(70px, 0px) rotate(-90deg)
+    @-webkit-keyframes pepepe {
+        0% {
+            -webkit-transform: rotate(0deg)
+        }
+        100% {
+            -webkit-transform: rotate(360deg)
+        }
     }
-    100% {
-        -webkit-transform: translate(300px, 0px) rotate(-810deg)
+
+    .pp {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        -webkit-transform-origin: 0 0;
     }
-}
 
-@-webkit-keyframes pepepe {
-    0% {
-        -webkit-transform: rotate(0deg)
+    .pee {
+        width: 20px;
+        height: 20px;
+        -webkit-animation: pew0 1s;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-transform-origin: 50% 50%;
     }
-    100% {
-        -webkit-transform: rotate(360deg)
+
+    .pa0 {
+        -webkit-animation-name: pew0;
     }
-}
+    .pa1 {
+        -webkit-animation-name: pew1;
+    }
+    .pa2 {
+        -webkit-animation-name: pew2;
+    }
+    .pa3 {
+        -webkit-animation-name: pew3;
+    }
+    .pepepe {
+    }
 
-.pp {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    -webkit-transform-origin: 0 0;
-}
+    #soos {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 5%;
+        text-align: center;
 
-.pee {
-    width: 20px;
-    height: 20px;
-    -webkit-animation: pew0 1s;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-transform-origin: 50% 50%;
-}
+        font-family: "Comic Sans MS";
+        color: white;
+        font-size: 64pt;
+        text-shadow: 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1);
+    }
 
-.pa0 {
-    -webkit-animation-name: pew0;
-}
-.pa1 {
-    -webkit-animation-name: pew1;
-}
-.pa2 {
-    -webkit-animation-name: pew2;
-}
-.pa3 {
-    -webkit-animation-name: pew3;
-}
-.pepepe {
-}
+    #laal {
+        position: absolute;
+        left: 50%;
+        right: 0;
+        bottom: 5%;
+        margin-bottom: 130px;
+        text-align: left;
 
-#soos {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 5%;
-    text-align: center;
+        font-family: "Courier New";
+        color: #0FF7FF;
+        font-size: 32pt;
+        text-shadow: 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1);
+    }
 
-    font-family: "Comic Sans MS";
-    color: white;
-    font-size: 64pt;
-    text-shadow: 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1);
-}
-
-#laal {
-    position: absolute;
-    left: 50%;
-    right: 0;
-    bottom: 5%;
-    margin-bottom: 130px;
-    text-align: left;
-
-    font-family: "Courier New";
-    color: #0FF7FF;
-    font-size: 32pt;
-    text-shadow: 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1);
-}
-
-body {
-    background: url("https://i.giphy.com/media/oyQsE48PjA4Gk/giphy.webp");
-    background-size: cover;
-    background-position: 50% 50%;
-}
-</style>
+    body {
+        background: url("https://i.giphy.com/media/oyQsE48PjA4Gk/giphy.webp");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    </style>
+</head>
+<body>
 
 <div id="kek1"></div>
+<div id="kek1b"></div>
 <div id="kek2"></div>
+<div id="kek2b"></div>
 <img src="pepes/0.png" id="pepe" draggable="false">
 <h1 id="soos">0</h1>
 <h1 id="laal"></h1>
@@ -197,25 +228,29 @@ var rares = [
 ];
 
 var pepe = document.getElementById("pepe");
-var kek = [document.getElementById("kek1"), document.getElementById("kek2")];
+var kek = [document.getElementById("kek1"), document.getElementById("kek2"), document.getElementById("kek1b"), document.getElementById("kek2b")];
 var soos = document.getElementById("soos");
 var laal = document.getElementById("laal");
 var cunt = 0, saggyCunt = 0;
 var powa = 1;
 var inta;
 
-pepe.addEventListener("mousedown", function (ev) {
+var mop;
+pepe.addEventListener("mousedown", mop=function (ev) {
+    ev.preventDefault();
     powa = 1;
     clearInterval(inta);
     inta = setInterval(function () {
         powa++;
         spawnOne();
         cunt++;
-        laal.innerHTML = "+" + powa;
+        laal.innerHTML = "+" + powa.toLocaleString("en");
     }, 50);
 });
+pepe.addEventListener("touchstart", mop);
 
-pepe.addEventListener("mouseup", function (ev) {
+var mup;
+pepe.addEventListener("mouseup", mup=function (ev) {
     ev.preventDefault();
     //powa = Math.max(1, cunt / 100);
     clearInterval(inta);
@@ -227,6 +262,7 @@ pepe.addEventListener("mouseup", function (ev) {
     
     cunt += powa;
 });
+pepe.addEventListener("touchend", mup);
 
 function spawnOne() {
     var p = document.createElement("div");
@@ -250,6 +286,11 @@ function spawnOne() {
 setInterval(function () {
     if (Math.abs(cunt - saggyCunt) < 0.4) return;
     saggyCunt += (cunt - saggyCunt) / 4;
-    soos.innerHTML = (saggyCunt.toFixed(0)).toLocaleString('en');
+    soos.innerHTML = Math.floor(saggyCunt).toLocaleString("en");
 }, 50);
+
+var meem;if((meem=parseInt(location.hash.substr(1)))>0)for(;meem>=0;meem--)setTimeout("spawnOne(cunt++)",meem*10);
+
 </script>
+</body>
+</html>
