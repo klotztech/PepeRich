@@ -186,6 +186,11 @@ body {
 <h1 id="laal"></h1>
 
 <script>
+var rares = [
+    "https://i.imgur.com/JdQLsTP.png",
+    "https://i.imgur.com/PrSlxeI.png",
+];
+
 var pepe = document.getElementById("pepe");
 var kek = [document.getElementById("kek1"), document.getElementById("kek2")];
 var soos = document.getElementById("soos");
@@ -229,7 +234,7 @@ function spawnOne() {
     
     var pee = document.createElement("img");
     pee.style.width = pee.style.height = Math.random() * 32 + 32;
-    pee.src = pepe.src;
+    pee.src = rares[Math.floor(Math.random() * rares.length)];
     pee.draggable = false;
     pee.className = "pee pa" + Math.round(Math.random() * 4);
     p.appendChild(pee);
