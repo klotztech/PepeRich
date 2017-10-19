@@ -1,0 +1,200 @@
+html {
+    overflow: hidden;
+}
+
+* {
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+@keyframes wob {
+    0% {
+        transform: scale(1.1, 1.1);
+    }
+    80% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1.1, 1.1);
+    }
+    .5% {
+        transform: scale(.9, .9);
+    }
+    2% {
+        transform: scale(.9, .9);
+    }
+    100% {
+        transform: scale(2, 2);
+    }
+}
+
+@keyframes shrink {
+    100% {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+#pepe {
+    width: 200px;
+    height: 200px;
+    transition: transform .05s ease-in-out;
+    cursor: pointer;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+    z-index: 1337696942;
+    animation: wob 1s infinite reverse;
+}
+
+#pepe:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#pepe:active {
+    transform: scale(.9, .9);
+}
+
+#kek1, #kek2, #kek1b, #kek2b {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    overflow: visible;
+}
+
+#kek1 {
+    animation: pepepe 60s infinite linear;
+}
+
+#kek2 {
+    animation: pepepe 40s infinite linear reverse;
+}
+
+#kek1b {
+    animation: pepepe 120s infinite linear;
+}
+
+#kek2b {
+    animation: pepepe 100s infinite linear reverse;
+}
+
+@keyframes pew0 {
+    0% {
+        transform: translate(70px, 0px) rotate(0deg)
+    }
+    100% {
+        transform: translate(300px, 0px) rotate(-720deg)
+    }
+}
+
+@keyframes pew1 {
+    0% {
+        transform: translate(70px, 0px) rotate(0deg)
+    }
+    100% {
+        transform: translate(300px, 0px) rotate(720deg)
+    }
+}
+
+@keyframes pew2 {
+    0% {
+        transform: translate(70px, 0px) rotate(90deg)
+    }
+    100% {
+        transform: translate(300px, 0px) rotate(810deg)
+    }
+}
+
+@keyframes pew3 {
+    0% {
+        transform: translate(70px, 0px) rotate(-90deg)
+    }
+    100% {
+        transform: translate(300px, 0px) rotate(-810deg)
+    }
+}
+
+@keyframes pepepe {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.pp {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform-origin: 0 0;
+}
+
+.pee {
+    width: 20px;
+    height: 20px;
+    animation: pew0 1s;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+}
+
+.pa0 {
+    animation-name: pew0;
+}
+.pa1 {
+    animation-name: pew1;
+}
+.pa2 {
+    animation-name: pew2;
+}
+.pa3 {
+    animation-name: pew3;
+}
+.pepepe {
+}
+
+#soos {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    text-align: center;
+
+    font-family: "Comic Sans MS";
+    color: white;
+    font-size: 64pt;
+    text-shadow: 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1);
+}
+
+#laal {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 5%;
+    margin-bottom: 130px;
+    text-align: left;
+
+    font-family: "Courier New";
+    color: #0FF7FF;
+    font-size: 32pt;
+    text-shadow: 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1);
+}
+
+body {
+    background: url("https://i.giphy.com/media/oyQsE48PjA4Gk/giphy.webp");
+    background-size: cover;
+    background-position: 50% 50%;
+}
