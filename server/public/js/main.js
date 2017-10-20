@@ -1,4 +1,4 @@
-var client = io("http://localhost:1337");
+var client = io();
 
 client.on("connect", function () {
     console.log("connected :)");

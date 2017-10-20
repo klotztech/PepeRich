@@ -18,11 +18,11 @@ class Player {
     }
 
     load() {
-        fs.readFile("data/" + this.id + ".json", function (err, data) {
-            if (err) throw err;
-            var playerData = JSON.parse(data);
-            console.log("load:", playerData);
-        })
+        // fs.readFile("data/" + this.id + ".json", function (err, data) {
+        //     if (err) throw err;
+        //     var playerData = JSON.parse(data);
+        //     console.log("load:", playerData);
+        // })
     }
 
     save() {
